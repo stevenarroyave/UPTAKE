@@ -11,7 +11,7 @@
       <a class="#Login" href="#Login">LOGIN</a>
       <a class="#signup" href="#xsignup">SIGN UP</a>
       <a class="#xmenu" href="#xmenu">MENU</a>
-      <a class="#Home" href="#home">UPTAKE</a>
+      <a class="#Home" href="./index.html"><img id="HeaderLogo" src="img/HeaderLogo.png"></img></a>
     </div>
     <div name="xcontainer" class="xcontainer">    <!-- container for the home page  --->
       <input type="text" placeholder="Job title, keywords...">
@@ -22,50 +22,68 @@
       <!-- <button type="button">POST YOUR AD</button>  -->
       <button type="1">POST YOUR AD</button>
     </div>
-    <div name="content" class="xcontent">
-      <h3> Posting your ad is easier than ever! <h3>
-      <img id="post" src="img/Post.png">
-      <h4>Post your ad in two minutes</h4>
-      <h5>Just fill in the details of the job you <br> want to advertise.</h5>
-      <h4>Receive applications from<br>thousands of candidates</h4>
-      <h5>Candidates will be able to see your<br>ad and apply or request to chat<br>with you.</h5>
-      <h4>Chat with your applicants<br>and select the perfect<br>candidate</h4>
-      <h5>After revising the applications<br>you can select the perfect<br>candidate.</h5>
+
+    <section class="postAdArea">
+        <div class="row">
+            <div class="col-12">
+                <h3>Posting your ad is easier than ever!</h3>
+            </div>
+            <div class="col-7">
+              <img id="post" src="img/Post.png"></img>
+            </div>
+            <div class="col-5">
+              <h4>Post your ad in two minutes</h4>
+              <h5>Just fill in the details of the job you <br> want to advertise.</h5>
+              <h4>Receive applications from<br>thousands of candidates</h4>
+              <h5>Candidates will be able to see your<br>ad and apply or request to chat<br>with you.</h5>
+              <h4>Chat with your applicants<br>and select the perfect<br>candidate</h4>
+              <h5>After revising the applications<br>you can select the perfect<br>candidate.</h5>
+            </div>
+        </div>
+    </section>
+    <section class="statsArea">
+        <div class="row">
+            <div class="col-4 mx-auto">
+                <h1 class="text-center">
+                  <h3>Sectors with the most opportunities. Join now!</h3>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+              <img id="icon" class="icon" src="img/mouse.png">
+              <h5>IT & TELECOMS</h5>
+              <h6>7178</h6>
+              <h5>SEE OFFERS</h5>
+            </div>
+            <div class="col-3">
+              <img id="icon" class="icon" src="img/cross.png">
+              <h5>HEALTH</h5>
+              <h6>1858</h6>
+              <h5>SEE OFFERS</h5>
+            </div>
+            <div class="col-3">
+              <img id="icon" class="icon" src="img/tool.png">
+              <h5>CONSTRUCTION</h5>
+              <h6>7346</h6>
+              <h5>SEE OFFERS</h5>
+            </div>
+            <div class="col-3">
+              <img id="icon" class="icon" src="img/id.png">
+              <h5>SERVICES</h5>
+              <h6>610</h6>
+              <h5>SEE OFFERS</h5>
+            </div>
+        </div>
+    </section>
     </div>
-    <div name="sectors" class="row">
-      <h3>Sectors with the most opportunities.<br> Join now!</h3>
-      <div class="column">
-        <img id="icon" class="icon" src="img/mouse.png">
-        <h5>IT & TELECOMS</h5>
-        <h6>7178</h6>
-        <h5>SEE OFFERS</h5>
-      </div>
-      <div class="column">
-        <img id="icon" class="icon" src="img/cross.png">
-        <h5>HEALTH</h5>
-        <h6>1858</h6>
-        <h5>SEE OFFERS</h5>
-      </div>
-      <div class="column">
-        <img id="icon" class="icon" src="img/tool.png">
-        <h5>CONSTRUCTION</h5>
-        <h6>7346</h6>
-        <h5>SEE OFFERS</h5>
-      </div>
-      <div class="column">
-        <img id="icon" class="icon" src="img/id.png">
-        <h5>SERVICES</h5>
-        <h6>610</h6>
-        <h5>SEE OFFERS</h5>
-      </div>
-    </div>
-    <footer class="text-center mt-5 pt-5 pb-5">   <!--  creating the footer  with three columns -->
+    <footer class="text-left mt-5 pt-5 pb-5">   <!--  creating the footer  with three columns -->
       <div id="contactUs" class="container">    <!--  creating a container for the contact form  -->
         <div class="row">
-            <div class="col">
+            <div class="col text-left">
               <img id="logo" class="logo" src="img/FooterLogo.png"></img>
             </div>
-          <div class="col">   <!--  second footer column where the social media links are displayed   -->
+          <div class="col text-left">   <!--  second footer column where the social media links are displayed   -->
             <h5 class="text mb-4">UPTAKE</h5>   <!-- column title -->
             <ul class="list-inline mb-0">  <!--  setting the column style  -->
                <li class="list-inline-item">
@@ -78,7 +96,7 @@
                </li>
              </ul>
           </div>
-          <div class="col">
+          <div class="col text-left">
             <h5 class="text mb-4">HELP</h5> <!-- title for the column  -->
             <ul class="list-inline mb-0">  <!--  setting the column style  -->
                <li class="list-inline-item">
@@ -91,7 +109,7 @@
                </li>
              </ul>
            </div>
-           <div class="col">
+           <div class="col text-left">
              <h5 class="text mb-4">LEGAL</h5> <!-- title for the column  -->
              <ul class="list-inline mb-0">  <!--  setting the column style  -->
                 <li class="list-inline-item">
@@ -104,7 +122,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col">
+            <div class="col text-left">
               <h5 class="text mb-4">LANGUAGE</h5> <!-- title for the column  -->
               <ul class="list-inline mb-0">  <!--  setting the column style  -->
                  <li class="list-inline-item">

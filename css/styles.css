@@ -1,26 +1,30 @@
 @font-face {   /* importing the font that I'll be using  */
-  font-family: "San Francisco";
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff');
+  src: url('https://fonts.googleapis.com/css?family=Montserrat');
 }
 
 body{    /*  styling the whole website's body, using the font i imported  */
   background-color: white;
-  font-family:'San Francisco';
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
 
+.topnav img{
+  float: left;
+  height: 15%;
+  width: 15%;
+  margin-left: 0px;
+}
+
 .xcontainer {    /* styling the top intro page  */
-  background-image: url("../img/Blue.png");
-  background-position: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-color: #1a253b;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   text-align: center;
-  /* padding-left: 5em; */
-  /* min-height: 600px; */
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .xcontainer input[type=text] {
@@ -42,7 +46,8 @@ body{    /*  styling the whole website's body, using the font i imported  */
 }
 
 .xcontainer button[type="1"] {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  width: 170px;
 }
 
 
@@ -88,9 +93,10 @@ img{  /* styling the main picture  */
 h1{   /*  styling the first header style, applying text shadow to make the font look thicker, since the font itself doesn't allow more weight(probably not the best practice but the easiest solution I could find)  */
   color: white;
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 600;
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
   margin-top: 80px;
+  margin-bottom: 18px;
 }
 
 h2{  /*  second header style  */
@@ -126,7 +132,7 @@ h5{
 h6{
   color: #1A253B;
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 
@@ -156,8 +162,9 @@ h6{
 
 
 footer{   /*  styling the footer  */
-  background-color: white;
-  background-image: url("../img/Footer.png")
+  background-color: #1a253b;
+  -webkit-clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
 }
 
 footer h5{
@@ -207,7 +214,3 @@ footer form-group{
   padding-left: 5px;
   padding-right: 5px;
 }
-
-a.twitter-timeline {
-  background: black;
-} */
