@@ -11,11 +11,21 @@ body{    /*  styling the whole website's body, using the font i imported  */
   padding: 0;
 }
 
-.topnav img{
-  float: left;
-  height: 15%;
-  width: 15%;
-  margin-left: 0px;
+.bg-light {
+    background-color: #1A253B!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.HeaderLogo{
+  height: 30px;
+  width: auto;
 }
 
 .xcontainer {    /* styling the top intro page  */
@@ -53,17 +63,37 @@ body{    /*  styling the whole website's body, using the font i imported  */
 
 img{  /* styling the main picture  */
   float: left;
-  height: 45%;
-  width: 45%;
+  /* height: 45%;
+  width: 45%; */
+  width: 70%;
   align: top;
   margin-left: 100px;
   margin-right: 30px;
-  max-width: 45%;
+  max-width: 70%;
+}
+
+.far, .fas{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.postAdArea h5{
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.postAdArea h4{
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.statsArea h3{
+  margin-bottom: 0px;
 }
 
 .icon{
-  height: 20%;
-  width: 20%;
+  height: 15%;
+  width: 15%;
   float: none;
   align-items: : center;
   margin-bottom: 15px;
@@ -120,13 +150,11 @@ h3{         /*  third header style  */
 h4{   /*  4th header style  */
   color: #1A253B;
   font-size: 25px;
-  /* padding-left: 570px; */
 }
 
 h5{
   color: #1A253B;
   font-size: 20px;
-  /* padding-left: 570px; */
 }
 
 h6{
@@ -135,30 +163,6 @@ h6{
   font-weight: 700;
 }
 
-
-/*  Add a blue background color to the top navigation */
-.topnav {
-    background-color: #1A253B;
-    overflow: hidden;
-    margin-right: 0px;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    margin-right: 10px;
-    position: relative;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    color: #ff1e5b;
-}
 
 
 footer{   /*  styling the footer  */
@@ -170,47 +174,24 @@ footer{   /*  styling the footer  */
 footer h5{
   color: white;
   font-size: 20px;
-  align-content: right;
-  align-items: right;
+  padding-top: 40px;
 }
 
 footer p{  /*  styling the footer's paragraph tag  */
   color: white;
 }
 
-footer h4{   /*  styling footer's h4 tag  */
-  margin-bottom: 10px;
-  font-size: 24px;
-  align: center;
-  margin-top: 10px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  line-height: 20px;
+.social{
+  height: 40%;
+  width: 40%;
+  align: middle;
+  float: right;
+}
+.fab{
+  color:#ff1e5b;
 }
 
-footer form-group{
-  width: 10px;
-}
-
-
-
-.small {   /* styling the font used in the very last "copyright" section of the page   */
-  color: black;
+hr{
+  display: block;
   background-color: white;
-}
-
-.col-md-4 img{    /* styling images displayed in the footer's columns   */
-  vertical-align: top;
-  display: inline;
-  width: 15%;
-  margin-right: 1%;
-  margin-bottom: 0.5em;"
-}
-
-.col-md-4 li{
-  vertical-align: top;
-  display: inline;
-  padding-left: 5px;
-  padding-right: 5px;
 }

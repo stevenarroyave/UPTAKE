@@ -5,24 +5,38 @@
     <title>Uptake</title>   <!-- assigning title for the page  --->
     <link href="css/bootstrap.min.css" rel="stylesheet">      <!-- linking bootstrap cascading style sheet  --->
     <link href="css/styles.css" rel="stylesheet" type="text/css">     <!-- linking my main style sheet  --->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </head>
   <body>
-    <div class="topnav">      <!-- creating the navigation bar on top and its items, and linking them to the corresponding section of the site --->
-      <a class="#Login" href="#Login">LOGIN</a>
-      <a class="#signup" href="#xsignup">SIGN UP</a>
-      <a class="#xmenu" href="#xmenu">MENU</a>
-      <a class="#Home" href="./index.html"><img id="HeaderLogo" src="img/HeaderLogo.png"></img></a>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img class="HeaderLogo" src="img/HeaderLogo.png" class="d-inline-block align-top" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">LOGIN <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SIGN UP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MENU</a>
+          </li>
+        </ul>
+      </div>
+</nav>
     <div name="xcontainer" class="xcontainer">    <!-- container for the home page  --->
       <input type="text" placeholder="Job title, keywords...">
       <input type="text" placeholder="Location">
       <button>Search</button>
       <h1>Hiring made simple. </h1>
       <h2>Need work done? It's easy. Simply post a job <br> you need completed and receive offers from <br> competent candidates.</h2><br>
-      <!-- <button type="button">POST YOUR AD</button>  -->
       <button type="1">POST YOUR AD</button>
     </div>
-
     <section class="postAdArea">
         <div class="row">
             <div class="col-12">
@@ -43,77 +57,87 @@
     </section>
     <section class="statsArea">
         <div class="row">
-            <div class="col-4 mx-auto">
+            <div class="col-5 mx-auto">
                 <h1 class="text-center">
                   <h3>Sectors with the most opportunities. Join now!</h3>
                 </h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-3">
-              <img id="icon" class="icon" src="img/mouse.png">
-              <h5>IT & TELECOMS</h5>
-              <h6>7178</h6>
-              <h5>SEE OFFERS</h5>
+        <div class="stats">
+          <div class="row">
+              <div class="col-3">
+                <i class="fas fa-laptop"></i>
+                <h5>IT & TELECOMS</h5>
+                <h6>7178</h6>
+                <h5>SEE OFFERS</h5>
+              </div>
+              <div class="col-3">
+                <i class="fas fa-stethoscope"></i>
+                <h5>HEALTH</h5>
+                <h6>1858</h6>
+                <h5>SEE OFFERS</h5>
+              </div>
+              <div class="col-3">
+                <i class="fas fa-tools"></i>
+                <h5>CONSTRUCTION</h5>
+                <h6>7346</h6>
+                <h5>SEE OFFERS</h5>
+              </div>
+              <div class="col-3">
+                <i class="far fa-id-card"></i>
+                <h5>SERVICES</h5>
+                <h6>610</h6>
+                <h5>SEE OFFERS</h5>
+              </div>
             </div>
-            <div class="col-3">
-              <img id="icon" class="icon" src="img/cross.png">
-              <h5>HEALTH</h5>
-              <h6>1858</h6>
-              <h5>SEE OFFERS</h5>
-            </div>
-            <div class="col-3">
-              <img id="icon" class="icon" src="img/tool.png">
-              <h5>CONSTRUCTION</h5>
-              <h6>7346</h6>
-              <h5>SEE OFFERS</h5>
-            </div>
-            <div class="col-3">
-              <img id="icon" class="icon" src="img/id.png">
-              <h5>SERVICES</h5>
-              <h6>610</h6>
-              <h5>SEE OFFERS</h5>
-            </div>
-        </div>
+          </div>
     </section>
     </div>
-    <footer class="text-left mt-5 pt-5 pb-5">   <!--  creating the footer  with three columns -->
-      <div id="contactUs" class="container">    <!--  creating a container for the contact form  -->
+
+<!--- footer here --->
+<footer>
+  <div class="col-sm-12 text-left">
+    <div class="row">
+      <div class="col-sm-7 five-three">
         <div class="row">
-            <div class="col text-left">
-              <img id="logo" class="logo" src="img/FooterLogo.png"></img>
-            </div>
-          <div class="col text-left">   <!--  second footer column where the social media links are displayed   -->
+          <div class="col-sm-4">
+            <img id="logo" class="logo" src="img/FooterLogo.png"></img>
+          </div>
+          <div class="col-sm-4 text-left">
             <h5 class="text mb-4">UPTAKE</h5>   <!-- column title -->
             <ul class="list-inline mb-0">  <!--  setting the column style  -->
-               <li class="list-inline-item">
-                 <h5>About us</h5>
-               <li class="list-inline-item">
-                 <h5>Contact Us</h5>
-               </li>
-               <li class="list-inline-item">
-                 <h5>Blog</h5>
-               </li>
-             </ul>
+              <li class="list-inline-item">
+                <h5>About us</h5>
+              <li class="list-inline-item">
+                <h5>Contact Us</h5>
+              </li>
+              <li class="list-inline-item">
+                <h5>Blog</h5>
+              </li>
+            </ul>
           </div>
-          <div class="col text-left">
-            <h5 class="text mb-4">HELP</h5> <!-- title for the column  -->
+        <div class="col-sm-4 text-left">
+          <h5 class="text mb-4">HELP</h5> <!-- title for the column  -->
+          <ul class="list-inline mb-0">  <!--  setting the column style  -->
+            <li class="list-inline-item">
+              <h5>FAQ</h5>
+              <li class="list-inline-item">
+                <h5>Tips and suggestions</h5>
+              </li>
+              <li class="list-inline-item">
+                <h5>Customer service</h5>
+              </li>
+            </ul>
+          </div><!-- end inner row -->
+        </div>
+      </div>
+      <div class="col-sm-5 five-two">
+        <div class="row">
+          <div class="col-sm-6 text-left">
+            <h5 class="text mb-4">LEGAL</h5> <!-- title for the column  -->
             <ul class="list-inline mb-0">  <!--  setting the column style  -->
-               <li class="list-inline-item">
-                 <h5>FAQ</h5>
-               <li class="list-inline-item">
-                 <h5>Tips and suggestions</h5>
-               </li>
-               <li class="list-inline-item">
-                 <h5>Customer service</h5>
-               </li>
-             </ul>
-           </div>
-           <div class="col text-left">
-             <h5 class="text mb-4">LEGAL</h5> <!-- title for the column  -->
-             <ul class="list-inline mb-0">  <!--  setting the column style  -->
-                <li class="list-inline-item">
-                  <h5>Privacy Notice</h5>
+              <li class="list-inline-item">
+                <h5>Privacy Notice</h5>
                 <li class="list-inline-item">
                   <h5>Terms of use</h5>
                 </li>
@@ -122,16 +146,32 @@
                 </li>
               </ul>
             </div>
-            <div class="col text-left">
+            <div class="col-sm-6 text-left">
               <h5 class="text mb-4">LANGUAGE</h5> <!-- title for the column  -->
               <ul class="list-inline mb-0">  <!--  setting the column style  -->
-                 <li class="list-inline-item">
+                <li class="list-inline-item">
                   <input type="text" placeholder="English">
-                 </li>
-               </ul>
-             </div>
+                </li>
+              </ul>
+            </div>
+        </div><!-- end inner row -->
       </div>
-    </footer>
+    </div><!-- end outer row -->
+    <div class="row">
+      <div class="col-12 text-right">
+        <hr>
+        <h5>Follow us!</h5>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
   <script src="js/bootstrap.bundle.min.js"></script>  <!-- bootstrap compiled and minified CSS   -->
 
 </body>
