@@ -37,121 +37,66 @@
       <button>POST</button>
     </div>
 
-
-
-
-
-    <div class="card" id="filter">
-    	<article class="card-group-item">
-    		<header class="card-header">
-    			<h6 class="title">Filter</h6>
-    		</header>
-          <div class="card-body">
-            <h5>Categories</h5>
-            <input type="text" placeholder="All categories">
-          </div>
-          <div class="card-body">
-            <h5>Location</h5>
-            <input type="text" placeholder="Change location">
-          </div>
-    			<div class="card-body">
-          <h5>Distance</h5>
-    			<input class="custom-range" min="0" max="100" name="" type="range">
-    			<div class="form-row">
-    			<div class="form-group col-md-6">
-            <br><h5>Budget</h5><br>
-            <!-- <input type="checkbox" class="custom-control-input" id="Check1"> -->
-            <label><h5>Fixed Price</h5></label>
-    			  <label>Min</label>
-    			  <input type="number" class="form-control" id="inputEmail4" placeholder="$0">
-    			</div>
-    			<div class="form-group col-md-6 text-right">
-    			  <label>Max</label>
-    			  <input type="number" class="form-control" placeholder="$1,0000">
-    			</div>
-    			</div>
-          <div class="card-body">
-            <h5>Date</h5>
-            <input type="text" placeholder="Last 24 hours">
-          </div>
-    			</div> <!-- card-body.// -->
-    	</article> <!-- card-group-item.// -->
-
-    </div> <!-- card.// -->
-
-
-
-
-
-
-
-
-
-   <div class="card-columns" id="cards">
-      <div class="card">
-        <img class="card-img-top" src="./img/Posts/photo.jpeg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Photographer</h5>
-          <p class="card-text">Lifestyle</p> <hr>
-          <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-          <h5 class"card-title">Steven Arroyave</h5>
-          <p class"card-text">Plymouth, UK</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="./img/Posts/photo.jpeg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Photographer</h5>
-          <p class="card-text">Lifestyle</p> <hr>
-          <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-          <h5 class"card-title">Steven Arroyave</h5>
-          <p class"card-text">Plymouth, UK</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="./img/Posts/photo.jpeg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Photographer</h5>
-          <p class="card-text">Lifestyle</p> <hr>
-          <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-          <h5 class"card-title">Steven Arroyave</h5>
-          <p class"card-text">Plymouth, UK</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="./img/Posts/photo.jpeg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Photographer</h5>
-          <p class="card-text">Lifestyle</p> <hr>
-          <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-          <h5 class"card-title">Steven Arroyave</h5>
-          <p class"card-text">Plymouth, UK</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="./img/Posts/photo.jpeg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Photographer</h5>
-          <p class="card-text">Lifestyle</p> <hr>
-          <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-          <h5 class"card-title">Steven Arroyave</h5>
-          <p class"card-text">Plymouth, UK</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="./img/Posts/photo.jpeg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Photographer</h5>
-          <p class="card-text">Lifestyle</p> <hr>
-          <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-          <h5 class"card-title">Steven Arroyave</h5>
-          <p class"card-text">Plymouth, UK</p>
-        </div>
-      </div>      
+    <div class="row">
+      <div class="col-3">
+        <div class="card" id="filter">
+        		<header class="card-header">
+        			<h6 class="title">Filter</h6>
+        		</header>
+            <div class="card-body">
+              <h5>Categories</h5>
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option hidden>Select a category</option>
+                  <option>Administration</option>
+                  <option>Charity & Voluntary</option>
+                  <option>Construction</option>
+                  <option>Education</option>
+                  <option>Finance</option>
+                  <option>Health</option>
+                  <option>IT & Telecoms</option>
+                  <option>Media, Digital & Creative</option>
+                  <option>Retail</option>
+                  <option>Security & Safety</option>
+                  <option>Training</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <h5>Location</h5>
+              <div class="form-group">
+                <input class="form-control" type="text">
+              </div>
+              <h5>Distance</h5>
+              <h5>Date</h5>
+            </div>
+        </div>	 <!-- card-body.// -->
+      </div> <!-- card.// -->
+      <div class="col-9"> <!---New post--->
+        <div class="card-columns" id="cards">
+           <div class="card">
+             <img id="postpic" class="card-img-top w-100" src="./img/Posts/photo.jpeg" alt="Card image cap">
+             <div class="card-body">
+               <h5 class="card-title">Photographer</h5>
+               <p class="card-text">Lifestyle</p> <hr>
+               <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
+               <h5 class"card-title">Steven Arroyave</h5>
+               <p class"card-text">Plymouth, UK</p>
+             </div>
+           </div>
+           <div class="card">
+             <img id="postpic" class="card-img-top w-100" src="./img/Posts/photo.jpeg" alt="Card image cap">
+             <div class="card-body">
+               <h5 class="card-title">Photographer</h5>
+               <p class="card-text">Lifestyle</p> <hr>
+               <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
+               <h5 class"card-title">Steven Arroyave</h5>
+               <p class"card-text">Plymouth, UK</p>
+             </div>
+           </div>
+         </div>
+      </div> <!---New post end--->
 
     </div>
-
-
 
 <!--- footer here --->
 <footer>
@@ -219,12 +164,36 @@
     <div class="row">
       <div class="col-12 text-right">
         <hr>
-        <h5>Follow us!</h5>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-google-plus-g"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-instagram"></i>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <span>Follow us!</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
