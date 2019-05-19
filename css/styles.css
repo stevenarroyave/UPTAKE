@@ -12,9 +12,6 @@ body{    /*  styling the whole website's body, using the font i imported  */
 }
 
 
-
-
-
 .bg-light {
     background-color: #1A253B!important;
 }
@@ -31,7 +28,6 @@ body{    /*  styling the whole website's body, using the font i imported  */
   height: 30px;
   width: auto;
 }
-
 
 .xcontainer {    /* styling the top intro page  */
   background-color: #1a253b;
@@ -115,12 +111,24 @@ body{    /*  styling the whole website's body, using the font i imported  */
   background-color: #F7F7F7;
 }
 
-.card p{
-  text-align: left;
+#demo{
+  color: black;
 }
 
 .card h5{
   font-size: 20px;
+}
+
+#profilepic{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+}
+
+#propic{
+  padding-top: 0;
+  margin-top: 0;
 }
 
 select {
@@ -258,6 +266,9 @@ span{
   font-size: 18px;
 }
 
+p{
+  text-align: left;
+}
 
 .card-title {
   font-size: 16px;
@@ -270,6 +281,15 @@ span{
   text-align: left;
 }
 
+#loadmore{
+  background-color: white;
+  height: 60px;
+  width: 150px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border:2px solid #ff1e5b;
+  color: #ff1e5b;
+}
 
 footer{   /*  styling the footer  */
   background-color: #1a253b;
