@@ -18,13 +18,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/home.html">LOGIN <span class="sr-only"></span></a>
+            <a class="nav-link" href="./home.html">LOGIN <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/home.html">SIGN UP</a>
+            <a class="nav-link" href="./home.html">SIGN UP</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/home.html">MENU</a>
+            <a class="nav-link" href="./home.html">MENU</a>
           </li>
         </ul>
       </div>
@@ -34,222 +34,223 @@
       <input type="text" placeholder="Job title, keywords...">
       <input type="text" placeholder="Location">
       <button>SEARCH</button>
-      <button>POST</button>
+      <button data-toggle="modal" data-target="#exampleModal">POST</button>
     </div>
-
-    <div class="row">
-      <div class="col-3">
-        <div class="card" id="filter">
-        		<header class="card-header">
-        			<h6 class="title">Filter</h6>
-        		</header>
-            <div class="card-body">
-              <h5>Categories</h5>
-              <div class="form-group">
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option hidden="">Select a category</option>
-                  <option>Administration</option>
-                  <option>Charity &amp; Voluntary</option>
-                  <option>Construction</option>
-                  <option>Education</option>
-                  <option>Finance</option>
-                  <option>Health</option>
-                  <option>IT &amp; Telecoms</option>
-                  <option>Media, Digital &amp; Creative</option>
-                  <option>Retail</option>
-                  <option>Security &amp; Safety</option>
-                  <option>Training</option>
-                  <option>Other</option>
-                </select>
-              </div><br>
-              <h5>Location</h5>
-              <div class="form-group">
-                <input class="form-control" type="text">
-              </div><br>
-              <h5>Distance</h5>
-              <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                <p><span id="demo">50</span> kms</p>
-              </div><br>
-              <h5>Budget</h5>
-              <div class="form-group">
-                <input type="text" id="name" name="name" requiredminlength="4" maxlength="8" size="5">
-                <p>to</p>
-                <input type="text" id="name" name="name" requiredminlength="4" maxlength="8" size="5">
-              </div><br>
-              <h5>Date</h5>
-              <div class="form-group">
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option hidden="">Select a date</option>
-                  <option>Last 24hrs</option>
-                  <option>Last week</option>
-                  <option>Last month</option>
-                  <option>Last 3 months</option>
-                  <option>Last 6 months</option>
-                  <option>Last year</option>
-                  <option>Forever</option>
-                </select>
+    <div class="container-fluid">
+      <div class="row align-items-start">
+        <div class="col-3">
+          <div class="card" id="filter">
+          		<header class="card-header">
+          			<h6 class="title">Filter</h6>
+          		</header>
+              <div class="card-body">
+                <h5>Categories</h5>
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option hidden="">Select a category</option>
+                    <option>Administration</option>
+                    <option>Charity &amp; Voluntary</option>
+                    <option>Construction</option>
+                    <option>Education</option>
+                    <option>Finance</option>
+                    <option>Health</option>
+                    <option>IT &amp; Telecoms</option>
+                    <option>Media, Digital &amp; Creative</option>
+                    <option>Retail</option>
+                    <option>Security &amp; Safety</option>
+                    <option>Training</option>
+                    <option>Other</option>
+                  </select>
+                </div><br>
+                <h5>Location</h5>
+                <div class="form-group">
+                  <input class="form-control" type="text">
+                </div><br>
+                <h5>Distance</h5>
+                <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  <p><span id="demo">50</span> kms</p>
+                </div><br>
+                <h5>Budget</h5>
+                <div class="form-group">
+                  <input type="text" id="name" name="name" requiredminlength="4" maxlength="8" size="5">
+                  <p>to</p>
+                  <input type="text" id="name" name="name" requiredminlength="4" maxlength="8" size="5">
+                </div><br>
+                <h5>Date</h5>
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option hidden="">Select a date</option>
+                    <option>Last 24hrs</option>
+                    <option>Last week</option>
+                    <option>Last month</option>
+                    <option>Last 3 months</option>
+                    <option>Last 6 months</option>
+                    <option>Last year</option>
+                    <option>Forever</option>
+                  </select>
+                </div>
               </div>
-            </div>
-        </div>	 <!-- card-body.// -->
-      </div> <!-- card.// -->
-      <div class="col-9"> <!---New post--->
-        <div class="card-columns" id="cards">
-           <div class="card">
-             <img id="postpic" class="card-img-top w-100" src="./img/Posts/1.jpg" alt="Card image cap">
-             <div class="card-body">
-               <h5 class="card-title">Photographer</h5>
-               <p class="card-text">Lifestyle</p> <hr>
-               <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-               <div id="propic" class="row">
-                 <div class="col-3">
-                   <img id="profilepic" class="profilepic" src="./img/Posts/1p.jpg" alt="Cardprofileimg">
+          </div>	 <!-- card-body.// -->
+        </div> <!-- card.// -->
+        <div class="col-9"> <!---New post--->
+          <div class="card-columns" id="cards">
+             <div class="card" data-toggle="modal" data-target="#postModal">
+               <img id="postpic" class="card-img-top w-100" src="./img/Posts/1.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <h5 class="card-title">Photographer</h5>
+                 <p class="card-text">Lifestyle</p> <hr>
+                 <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
+                 <div id="propic" class="row">
+                   <div class="col-3">
+                     <img id="profilepic" class="profilepic" src="./img/Posts/1p.jpg" alt="Cardprofileimg">
+                   </div>
+                   <div class="col-9">
+                     <h5 class"card-title"="">Steven Arroyave</h5>
+                     <p class"card-text"="">Plymouth, UK</p>
+                    </div>
                  </div>
-                 <div class="col-9">
-                   <h5 class"card-title"="">Steven Arroyave</h5>
-                   <p class"card-text"="">Plymouth, UK</p>
-                  </div>
+               </div>
+             </div>
+             <div class="card">
+               <img id="postpic" class="card-img-top w-100" src="./img/Posts/2.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <h5 class="card-title">Photographer/Editor</h5>
+                 <p class="card-text">Lifestyle</p> <hr>
+                 <p class="card-text">30mins - 1h / 3 days a week<br>£6 - hour</p><hr>
+                 <div id="propic" class="row">
+                   <div class="col-3">
+                     <img id="profilepic" class="profilepic" src="./img/Posts/2p.jpg" alt="Cardprofileimg">
+                   </div>
+                   <div class="col-9">
+                     <h5 class"card-title"="">Alejandro Morales</h5>
+                     <p class"card-text"="">Plymouth, UK</p>
+                    </div>
+                 </div>
+               </div>
+             </div>
+             <div class="card" data-toggle="modal" data-target="#postModal">
+               <img id="postpic" class="card-img-top w-100" src="./img/Posts/3.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <h5 class="card-title">Filmmaker</h5>
+                 <p class="card-text">Lifestyle</p> <hr>
+                 <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
+                 <div id="propic" class="row">
+                   <div class="col-3">
+                     <img id="profilepic" class="profilepic" src="./img/Posts/3p.jpg" alt="Cardprofileimg">
+                   </div>
+                   <div class="col-9">
+                     <h5 class"card-title"="">Sharon Saji</h5>
+                     <p class"card-text"="">Plymouth, UK</p>
+                    </div>
+                 </div>
+               </div>
+             </div>
+             <div class="card">
+               <img id="postpic" class="card-img-top w-100" src="./img/Posts/4.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <h5 class="card-title">Filmmaker</h5>
+                 <p class="card-text">Lifestyle</p> <hr>
+                 <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
+                 <div id="propic" class="row">
+                   <div class="col-3">
+                     <img id="profilepic" class="profilepic" src="./img/Posts/4p.jpg" alt="Cardprofileimg">
+                   </div>
+                   <div class="col-9">
+                     <h5 class"card-title"="">Daniel Easton</h5>
+                     <p class"card-text"="">Plymouth, UK</p>
+                    </div>
+                 </div>
+               </div>
+             </div>
+             <div class="card">
+               <img id="postpic" class="card-img-top w-100" src="./img/Posts/5.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <h5 class="card-title">Photographer</h5>
+                 <p class="card-text">Lifestyle</p> <hr>
+                 <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
+                 <div id="propic" class="row">
+                   <div class="col-3">
+                     <img id="profilepic" class="profilepic" src="./img/Posts/5p.jpg" alt="Cardprofileimg">
+                   </div>
+                   <div class="col-9">
+                     <h5 class"card-title"="">Harry Wyatt</h5>
+                     <p class"card-text"="">Plymouth, UK</p>
+                    </div>
+                 </div>
+               </div>
+             </div>
+             <div class="card">
+               <img id="postpic" class="card-img-top w-100" src="./img/Posts/6.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <h5 class="card-title">Camera crew</h5>
+                 <p class="card-text">Lifestyle</p> <hr>
+                 <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
+                 <div id="propic" class="row">
+                   <div class="col-3">
+                     <img id="profilepic" class="profilepic" src="./img/Posts/6p.jpg" alt="Cardprofileimg">
+                   </div>
+                   <div class="col-9">
+                     <h5 class"card-title"="">Sarah Paulson</h5>
+                     <p class"card-text"="">Plymouth, UK</p>
+                    </div>
+                 </div>
+               </div>
+             </div>
+             <div class="card">
+               <img id="postpic" class="card-img-top w-100" src="./img/Posts/7.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <h5 class="card-title">Photographer</h5>
+                 <p class="card-text">Lifestyle</p> <hr>
+                 <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
+                 <div id="propic" class="row">
+                   <div class="col-3">
+                     <img id="profilepic" class="profilepic" src="./img/Posts/7p.jpg" alt="Cardprofileimg">
+                   </div>
+                   <div class="col-9">
+                     <h5 class"card-title"="">Jessica Lange</h5>
+                     <p class"card-text"="">Plymouth, UK</p>
+                    </div>
+                 </div>
+               </div>
+             </div>
+             <div class="card">
+               <img id="postpic" class="card-img-top w-100" src="./img/Posts/8.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <h5 class="card-title">Filmmaker</h5>
+                 <p class="card-text">Lifestyle</p> <hr>
+                 <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
+                 <div id="propic" class="row">
+                   <div class="col-3">
+                     <img id="profilepic" class="profilepic" src="./img/Posts/8p.jpg" alt="Cardprofileimg">
+                   </div>
+                   <div class="col-9">
+                     <h5 class"card-title"="">Evan Peters</h5>
+                     <p class"card-text"="">Plymouth, UK</p>
+                    </div>
+                 </div>
+               </div>
+             </div>
+             <div class="card">
+               <img id="postpic" class="card-img-top w-100" src="./img/Posts/9.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <h5 class="card-title">Photographer</h5>
+                 <p class="card-text">Lifestyle</p> <hr>
+                 <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
+                 <div id="propic" class="row">
+                   <div class="col-3">
+                     <img id="profilepic" class="profilepic" src="./img/Posts/9p.jpg" alt="Cardprofileimg">
+                   </div>
+                   <div class="col-9">
+                     <h5 class"card-title"="">Billy Eichner</h5>
+                     <p class"card-text"="">Plymouth, UK</p>
+                    </div>
+                 </div>
                </div>
              </div>
            </div>
-           <div class="card">
-             <img id="postpic" class="card-img-top w-100" src="./img/Posts/2.jpg" alt="Card image cap">
-             <div class="card-body">
-               <h5 class="card-title">Photographer/Editor</h5>
-               <p class="card-text">Lifestyle</p> <hr>
-               <p class="card-text">30mins - 1h / 3 days a week<br>£6 - hour</p><hr>
-               <div id="propic" class="row">
-                 <div class="col-3">
-                   <img id="profilepic" class="profilepic" src="./img/Posts/2p.jpg" alt="Cardprofileimg">
-                 </div>
-                 <div class="col-9">
-                   <h5 class"card-title"="">Alejandro Morales</h5>
-                   <p class"card-text"="">Plymouth, UK</p>
-                  </div>
-               </div>
-             </div>
-           </div>
-           <div class="card">
-             <img id="postpic" class="card-img-top w-100" src="./img/Posts/3.jpg" alt="Card image cap">
-             <div class="card-body">
-               <h5 class="card-title">Filmmaker</h5>
-               <p class="card-text">Lifestyle</p> <hr>
-               <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-               <div id="propic" class="row">
-                 <div class="col-3">
-                   <img id="profilepic" class="profilepic" src="./img/Posts/3p.jpg" alt="Cardprofileimg">
-                 </div>
-                 <div class="col-9">
-                   <h5 class"card-title"="">Sharon Saji</h5>
-                   <p class"card-text"="">Plymouth, UK</p>
-                  </div>
-               </div>
-             </div>
-           </div>
-           <div class="card">
-             <img id="postpic" class="card-img-top w-100" src="./img/Posts/4.jpg" alt="Card image cap">
-             <div class="card-body">
-               <h5 class="card-title">Filmmaker</h5>
-               <p class="card-text">Lifestyle</p> <hr>
-               <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-               <div id="propic" class="row">
-                 <div class="col-3">
-                   <img id="profilepic" class="profilepic" src="./img/Posts/4p.jpg" alt="Cardprofileimg">
-                 </div>
-                 <div class="col-9">
-                   <h5 class"card-title"="">Daniel Easton</h5>
-                   <p class"card-text"="">Plymouth, UK</p>
-                  </div>
-               </div>
-             </div>
-           </div>
-           <div class="card">
-             <img id="postpic" class="card-img-top w-100" src="./img/Posts/5.jpg" alt="Card image cap">
-             <div class="card-body">
-               <h5 class="card-title">Photographer</h5>
-               <p class="card-text">Lifestyle</p> <hr>
-               <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-               <div id="propic" class="row">
-                 <div class="col-3">
-                   <img id="profilepic" class="profilepic" src="./img/Posts/5p.jpg" alt="Cardprofileimg">
-                 </div>
-                 <div class="col-9">
-                   <h5 class"card-title"="">Harry Wyatt</h5>
-                   <p class"card-text"="">Plymouth, UK</p>
-                  </div>
-               </div>
-             </div>
-           </div>
-           <div class="card">
-             <img id="postpic" class="card-img-top w-100" src="./img/Posts/6.jpg" alt="Card image cap">
-             <div class="card-body">
-               <h5 class="card-title">Camera crew</h5>
-               <p class="card-text">Lifestyle</p> <hr>
-               <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-               <div id="propic" class="row">
-                 <div class="col-3">
-                   <img id="profilepic" class="profilepic" src="./img/Posts/6p.jpg" alt="Cardprofileimg">
-                 </div>
-                 <div class="col-9">
-                   <h5 class"card-title"="">Sarah Paulson</h5>
-                   <p class"card-text"="">Plymouth, UK</p>
-                  </div>
-               </div>
-             </div>
-           </div>
-           <div class="card">
-             <img id="postpic" class="card-img-top w-100" src="./img/Posts/7.jpg" alt="Card image cap">
-             <div class="card-body">
-               <h5 class="card-title">Photographer</h5>
-               <p class="card-text">Lifestyle</p> <hr>
-               <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-               <div id="propic" class="row">
-                 <div class="col-3">
-                   <img id="profilepic" class="profilepic" src="./img/Posts/7p.jpg" alt="Cardprofileimg">
-                 </div>
-                 <div class="col-9">
-                   <h5 class"card-title"="">Jessica Lange</h5>
-                   <p class"card-text"="">Plymouth, UK</p>
-                  </div>
-               </div>
-             </div>
-           </div>
-           <div class="card">
-             <img id="postpic" class="card-img-top w-100" src="./img/Posts/8.jpg" alt="Card image cap">
-             <div class="card-body">
-               <h5 class="card-title">Filmmaker</h5>
-               <p class="card-text">Lifestyle</p> <hr>
-               <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-               <div id="propic" class="row">
-                 <div class="col-3">
-                   <img id="profilepic" class="profilepic" src="./img/Posts/8p.jpg" alt="Cardprofileimg">
-                 </div>
-                 <div class="col-9">
-                   <h5 class"card-title"="">Evan Peters</h5>
-                   <p class"card-text"="">Plymouth, UK</p>
-                  </div>
-               </div>
-             </div>
-           </div>
-           <div class="card">
-             <img id="postpic" class="card-img-top w-100" src="./img/Posts/9.jpg" alt="Card image cap">
-             <div class="card-body">
-               <h5 class="card-title">Photographer</h5>
-               <p class="card-text">Lifestyle</p> <hr>
-               <p class="card-text">30mins - 1h / 3 days a week<br>£7 - hour</p><hr>
-               <div id="propic" class="row">
-                 <div class="col-3">
-                   <img id="profilepic" class="profilepic" src="./img/Posts/9p.jpg" alt="Cardprofileimg">
-                 </div>
-                 <div class="col-9">
-                   <h5 class"card-title"="">Billy Eichner</h5>
-                   <p class"card-text"="">Plymouth, UK</p>
-                  </div>
-               </div>
-             </div>
-           </div>
-         </div>
-      </div> <!---New post end--->
+        </div> <!---New post end--->
+      </div>
     </div>
     <div>
       <div name="loadmore"  class="row">
@@ -360,6 +361,68 @@
 </footer>
 
 
+<!--- new post modal -->
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <i class="fas fa-store-alt"></i>
+        <h5 class="modal-title" id="exampleModalLabel">Post your ad on Uptake</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="false">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input id="modalinput" class="form-control" type="text" placeholder="What service do you need?">
+        </div>
+        <hr>
+        <div class="form-group">
+          <input  id="modalinput" class="form-control" type="text" placeholder="Price">
+        </div><hr>
+        <div class="form-group">
+          <input  id="modalinput" class="form-control" type="text" placeholder="Add location">
+        </div><hr>
+        <div class="form-group">
+          <input  id="modalinput" class="form-control" type="text" placeholder="Select category">
+        </div><hr>
+        <div class="form-group">
+          <input id="modalinput" class="form-control" type="text" placeholder="Describe the job (optional)">
+          <div class="form-group">
+            <img id="postpic" src="./img/addimages.jpg" alt="Card image cap" style="height: 100px; width:100px; margin-left: 18px; margin-top: 15px; ">
+          </div>
+        </div><hr>
+        <div>
+          <p>By posting, you confirm that this listing complies with Uptake's Commerce<br>Policies and all applicable laws. Learn more.<p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="loadmore" type="button" class="btn btn-primary">POST</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--- new post modal end --->
+
+
+<!--- current post modal -->
+<div class="modal fade bd-example-modal-lg" id="postModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+      </div>
+      <div class="modal-body">
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--- current post modal end--->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>  <!-- bootstrap compiled and minified CSS   -->
   <script src="./js/scripts.js"></script>
 
