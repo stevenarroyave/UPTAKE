@@ -245,9 +245,13 @@ img{  /* styling the main picture  */
 
 .row{
   margin-top: 100px;
-  align-items: center;
   text-align: center;
 }
+
+#row2{
+  margin-top: 20px;
+}
+
 
 .column {
   float: left;
@@ -379,24 +383,90 @@ hr{
   margin-left: 13px;
 }
 
-#postModal h5{
-  color: white;
+#exampleModal{
+  top: 50px;
 }
 
-.modal-header{
+#postModal{
+  top: 50px;
+}
+
+#postModal h5{
+  color: #1a253b;
+  font-size: 20px;
+  padding-top: 0px;
+}
+
+#postModal .modal-header{
+  background-image: url("../img/Posts/10.jpg");
+  background-size: cover;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  height: 300px;
+}
+
+#exampleModal .modal-header{
   background-color: #1A253B;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+#profilepic2{
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  vertical-align: top;
+  margin-bottom: 30px;
 }
 
 .fas{
   color: #ff1e5b;
   font-size: 20px;
   margin-right: 10px;
-  margin-top: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align: right;
 }
+
+#headerFas{
+  color: #ff1e5b;
+  font-size: 20px;
+  margin-right: 10px;
+  align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+
 
 #modalinput{
   border: none;
   box-shadow: none;
+}
+
+#map{
+  height: 100%;
+  width: 90%;
+  align-items: center;
+  padding-top: 10px;
+}
+
+#iconx{
+  color: #1a253b;
+  font-size: 35px;
+  margin-top: 0px;
+}
+#iconp{
+  text-align: center;
+  margin-top: 0px;
+}
+
+#addphotos{
+  height: 100px;
+  width:100px;
+  margin-left: 18px;
+  margin-top: 15px;
+  float: none;
 }
 
 .form-control:focus {

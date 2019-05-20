@@ -37,7 +37,7 @@
       <button data-toggle="modal" data-target="#exampleModal">POST</button>
     </div>
     <div class="container-fluid">
-      <div class="row align-items-start">
+      <div class="row align-items-start" id="row2">
         <div class="col-3">
           <div class="card" id="filter">
           		<header class="card-header">
@@ -366,7 +366,7 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <i class="fas fa-store-alt"></i>
+        <i class="fas fa-store-alt" id="headerFas"></i>
         <h5 class="modal-title" id="exampleModalLabel">Post your ad on Uptake</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="false">&times;</span>
@@ -389,14 +389,12 @@
         <div class="form-group">
           <input id="modalinput" class="form-control" type="text" placeholder="Describe the job (optional)">
           <div class="form-group">
-            <img id="postpic" src="./img/addimages.jpg" alt="Card image cap" style="height: 100px; width:100px; margin-left: 18px; margin-top: 15px; ">
+            <img id="addphotos" src="./img/addimages.jpg" alt="Card image cap">
           </div>
-        </div><hr>
-        <div>
-          <p>By posting, you confirm that this listing complies with Uptake's Commerce<br>Policies and all applicable laws. Learn more.<p>
         </div>
       </div>
       <div class="modal-footer">
+        <p>By posting, you confirm that this listing complies with Uptake's Commerce<br>Policies and all applicable laws. Learn more.<p>
         <button id="loadmore" type="button" class="btn btn-primary">POST</button>
       </div>
     </div>
@@ -410,10 +408,55 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="false">&times;</span>
+        </button>
       </div>
       <div class="modal-body">
-
+        <div class="row" id="row2">
+          <div class="col-md-6">
+            <h5 class="card-title">Photographer</h5>
+            <p class="card-text">Photography</p><br>
+            <h5>Description</h5>
+            <p class="card-text">I am a passionate and artistic photographer and photo editor. Always looking for a different angle and striving to improve all the time. More than capable of capturing a wide array of scenes, portraits, products and beauty in my photos. I am also a pro in Photoshop - both in editing and graphic design. </p>
+            <div class="row" id="row2">
+                <div class="col-md-4">
+                  <i id="iconx" class="far fa-comment-dots"></i>
+                  <p class="card-text" id="iconp">Request<br>chat</p>
+                </div>
+                <div class="col-md-4">
+                  <i id="iconx" class="fas fa-tasks"></i>
+                  <p class="card-text" id="iconp">Apply</p>
+                </div>
+                <div class="col-md-4">
+                  <i id="iconx" class="far fa-heart"></i>
+                  <p class="card-text" id="iconp">Save to<br>favorites</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="propic" class="row">
+              <div class="col-3">
+                <img id="profilepic2" class="profilepic2" src="./img/Posts/1p.jpg" alt="Cardprofileimg">
+              </div>
+              <div class="col-9">
+                <h5 class"card-title"="">Steven Arroyave</h5>
+                <p class"card-text"="">Plymouth, UK</p>
+              </div>
+              <h5>Ratings</h5><br>
+              <div class="row" id="row2">
+                <i class="fas fa-star" style="color:#fec107;"></i>
+                <i class="fas fa-star" style="color:#fec107;"></i>
+                <i class="fas fa-star" style="color:#fec107;"></i>
+                <i class="fas fa-star" style="color:#fec107;"></i>
+                <i class="fas fa-star" style="color:#a0a0a0;"></i>
+              </div>
+              <div class="row" id="row2">
+                <img id="map" class="map" src="./img/Posts/11.png" alt="mapimg">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
