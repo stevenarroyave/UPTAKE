@@ -137,6 +137,7 @@ body{    /*  styling the whole website's body, using the font i imported  */
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  margin-top: 15px;
 }
 
 .slider:hover {
@@ -395,6 +396,13 @@ hr{
   color: #1a253b;
   font-size: 20px;
   padding-top: 0px;
+}
+
+#maxmin{
+  margin-top: 15px;
+  align-items: center;
+  align-content: center;
+  padding-left: 13px;
 }
 
 #postModal .modal-header{
